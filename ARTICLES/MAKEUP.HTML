@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সম্পূর্ণ মেকআপ কোর্স - শাজগোজ একাডেমি</title>
+    <style>
+        :root {
+            --primary-color: #e91e63;
+            --secondary-color: #f8bbd0;
+            --accent-color: #c2185b;
+        }
+
+        body {
+            font-family: 'Mukta', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background: #fff9fb;
+        }
+
+        .navbar {
+            background: var(--primary-color);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+        }
+
+        .course-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .module-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .video-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin: 2rem 0;
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .reference-box {
+            background: #ffe5ec;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .download-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem 0;
+            transition: transform 0.3s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#basics">বেসিকস</a>
+        <a href="#techniques">টেকনিক</a>
+        <a href="#products">প্রোডাক্টস</a>
+        <a href="#resources">রিসোর্সেস</a>
+    </nav>
+
+    <div class="course-container">
+        <!-- Module 1: Basics -->
+        <div class="module-card" id="basics">
+            <h2>মডিউল ১: মেকআপের বেসিকস</h2>
+            <h3>প্রয়োজনীয় টুলস ও প্রস্তুতি</h3>
+            <p>মেকআপ শুরু করার আগে প্রয়োজনীয় সরঞ্জাম এবং ত্বক প্রস্তুতির ধাপগুলো...</p>
+            
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/XYZ123" allowfullscreen></iframe>
+            </div>
+
+            <div class="reference-box">
+                <h4>রেফারেন্স ম্যাটেরিয়াল</h4>
+                <p>বিস্তারিত জানতে দেখুন: 
+                    <a href="https://www.shajgoj.com/basic-makeup-guide" target="_blank">শাজগোজ বেসিক গাইড</a>,
+                    <a href="https://beautytips.com/skin-prep" target="_blank">ত্বক প্রস্তুতি</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Module 2: Techniques -->
+        <div class="module-card" id="techniques">
+            <h2>মডিউল ২: প্রফেশনাল টেকনিক</h2>
+            <h3>কনট্যুরিং ও হাইলাইটিং</h3>
+            <p>মুখের গঠন অনুযায়ী কনট্যুর করার সঠিক পদ্ধতি...</p>
+            
+            <h3>আই মেকআপ মাস্টারি</h3>
+            <p>স্মোকি আইস এবং কাট ক্রিজ টেকনিক...</p>
+
+            <a href="downloads/contour-chart.pdf" class="download-btn">
+                ফেস শেপ চার্ট ডাউনলোড করুন
+            </a>
+        </div>
+
+        <!-- Product Guide -->
+        <div class="module-card" id="products">
+            <h2>প্রোডাক্ট সিলেকশন গাইড</h2>
+            <div class="product-table">
+                <h3>বাজেট-ফ্রেন্ডলি প্রোডাক্টস</h3>
+                <p>সুইস বিউটি প্রাইমার - ৳৩৯৯ [<a href="https://shop.com/primer" target="_blank">কিনুন</a>]</p>
+                <p>মেবেলিন ফিট মি ফাউন্ডেশন - ৳৫৫০ [<a href="https://shop.com/foundation" target="_blank">কিনুন</a>]</p>
+            </div>
+        </div>
+
+        <!-- Additional Resources -->
+        <div class="module-card" id="resources">
+            <h2>লার্নিং রিসোর্সেস</h2>
+            <ul>
+                <li><a href="https://coursera.org/makeup-basics" target="_blank">ফ্রি অনলাইন কোর্স</a></li>
+                <li><a href="https://pinterest.com/makeup-inspiration" target="_blank">ইনস্পিরেশন গ্যালারি</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Interactive Quiz Script
+        function startQuiz() {
+            const answer = prompt("ফাউন্ডেশন সিলেকশনে সবচেয়ে গুরুত্বপূর্ণ ফ্যাক্টরটি কী?\nক) ব্র্যান্ড\nখ) স্কিন টোন\nগ) মূল্য");
+            if(answer.toLowerCase() === 'খ') {
+                alert("সঠিক উত্তর! স্কিন টোন সঠিকভাবে ম্যাচ করা জরুরি");
+            } else {
+                alert("আবার চেষ্টা করুন। হিন্ট: ত্বকের রঙ দেখে নিন");
+            }
+        }
+
+        // Initialize interactive button
+        document.addEventListener('DOMContentLoaded', () => {
+            const quizBtn = document.createElement('button');
+            quizBtn.textContent = 'কুইজ শুরু করুন';
+            quizBtn.className = 'download-btn';
+            quizBtn.style.position = 'fixed';
+            quizBtn.style.bottom = '20px';
+            quizBtn.style.right = '20px';
+            quizBtn.onclick = startQuiz;
+            document.body.appendChild(quizBtn);
+        });
+    </script>
+</body>
+</html>
